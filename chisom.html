@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(35, 85, 141);
+  position: fixed; 
+  overflow: auto;
+  z-index: 1;
+}
+li {
+  float: left;
+}
+li.logo {
+  display: block;
+  float: left;
+}
+li a.button {
+  display: block;
+  background-color: rgb(48, 107, 172);
+  color: rgb(245, 230, 255);
+  padding: 16px 64px;
+  text-decoration: none;
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+li a:hover:not(.active) {
+  background-color: rgb(152, 185, 242);
+  color: rgb(87, 132, 211);
+}
+.active {
+  display: block;
+  background-color: rgb(123, 120, 224);
+  color: rgb(245, 230, 255);
+  padding: 16px 64px;
+  text-decoration: none;
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+
+
+body {
+  background-image: url("Stars(Bigger).png");
+  padding: 20px;
+  color: rgb(203, 220, 251); 
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 20px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60px;
+  word-break: break-all;
+  text-shadow: 10px 10px 10px rgb(111, 156, 235);
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+}
+
+h3 {
+  color: rgb(201, 199, 251); 
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 21px;
+}
+
+p {
+  color: rgb(152, 185, 242);  
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 18px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+div.videodisplay {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border: 10px solid rgb(12, 53, 97);
+  background-color: rgb(20, 27, 65);
+  float:left;
+}
+
+.block {
+  background-color: rgb(20, 27, 65);
+  padding: 10px;
+}
+
+</style>
+<!-- Put Page Title Here-->
+<title>SY64I's Page: Chisom</title>
+
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+  <ul>
+    <li class="logo"><a href="/index.html"><b><img src="64LogoAnim2(512 x 512).gif" alt="My Logo" width="67" height="67"></b></a></li>
+    <li><a class="button" href="/games.html"><b>Games</b></a></li>
+    <li><a class="button" href="/art.html"><b>Art</b></a></li>
+    <li><a class="button" href="/home.html"><b>About</b></a></li>
+  </ul>
+
+<h1>Chisom</h1>
+<div class="videodisplay">
+  <video style="width:100%" controls>
+    <source src="Previews/ChisomPreview.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<p>
+  &nbsp;
+</p>
+<div class="block">
+  <hr>
+  <p>Guide Chisom through the 2D bullet hell game to try and survive and score points. Chisom can fly in 8 directions, and has a dash
+    ability that allows them to both kill enemies and be invulernable to damage. Players have to use the dash tacticfully to not only
+    kill enemies, but also to fly through enemy bullets if they're stuck in a tight spot. </p>
+  <p>This project also features <b>online multiplayer</b>. Using the online hosting service Photon, Chisom offers <b>a room based multiplayer system,</b>
+    where players can enter a username and then either create or join rooms other players on the network have created. Once in a room, players can choose
+    from four different player colours, and all have to ready up before a match can be started.</p>
+  <hr>
+  <p>This project was planned to have much more, such as a full singleplayer mode, various online multiplayer modes, and many more different
+    enviroments and gameplay meachnics. However, this project is discontiuned for the time being, since at the time I had made the scope of this
+    project far too large to be able to complete with the experience I had. Despite this, Chisom does have a fully functioning online server lobby system and does have
+    some online multiplayer, although in its current state the multiplayer is still very buggy. I also may still return to this project to try and
+    redo this project someday, since I still think the ideas and concepts I had for this project sound fun.
+  </p>
+  <hr>
+</div>
+<p>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+</p>
+</body>
+</html>

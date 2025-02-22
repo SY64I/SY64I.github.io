@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(35, 85, 141);
+  position: fixed; 
+  overflow: auto;
+  z-index: 1;
+}
+li {
+  float: left;
+}
+li.logo {
+  display: block;
+  float: left;
+}
+li a.button {
+  display: block;
+  background-color: rgb(48, 107, 172);
+  color: rgb(245, 230, 255);
+  padding: 16px 64px;
+  text-decoration: none;
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+li a:hover:not(.active) {
+  background-color: rgb(152, 185, 242);
+  color: rgb(87, 132, 211);
+}
+.active {
+  display: block;
+  background-color: rgb(123, 120, 224);
+  color: rgb(245, 230, 255);
+  padding: 16px 64px;
+  text-decoration: none;
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+
+
+body {
+  background-image: url("Stars(Bigger).png");
+  padding: 20px;
+  color: rgb(203, 220, 251); 
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 20px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60px;
+  word-break: break-all;
+  text-shadow: 10px 10px 10px rgb(111, 156, 235);
+  font-family: 'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+}
+
+h3 {
+  color: rgb(201, 199, 251); 
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 21px;
+}
+
+p {
+  color: rgb(152, 185, 242);  
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 18px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(20, 27, 65);
+  padding: 10px;
+}
+
+.content:hover {
+  background-color: rgb(73, 54, 170);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.block {
+  background-color: rgb(20, 27, 65);
+  padding: 10px;
+}
+
+</style>
+
+<!-- Put Page Title Here-->
+<title>SY64I's Page: Games</title>
+
+
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+<ul>
+  <li class="logo"><a href="/index.html"><b><img src="64LogoAnim2(512 x 512).gif" alt="My Logo" width="67" height="67"></b></a></li>
+  <li><a class="active"><b>Games</b></a></li>
+  <li><a class="button" href="/art.html"><b>Art</b></a></li>
+  <li><a class="button" href="/home.html"><b>About</b></a></li>
+</ul>
+
+
+
+<h1>My Projects</h1>
+
+<div class="block">
+  <hr>
+  <h2>Below are all the projects that are in some way, my own original work.</h2>
+  <p>Any future projects will be posted here and on my itch.io.</p>
+  <hr>
+</div>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <a href="/soul-lous.html">
+      <div class="content">
+        <video style="width:100%" autoplay loop>
+          <source src="Demos/Soul-louSDemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Soul-louS</h3>
+        <p>Help Nolon work with his body and soul escape the labyrinth.</p>
+      </div>
+    </a>
+  </div>
+  <div class="column">
+    <a href="/somemazegame.html">
+      <div class="content">
+        <video style="width:100%" autoplay loop>
+          <source src="Demos/SomeMazeGameDemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Some Maze Game</h3>
+        <p>Evade the animatronics while trying to escape the maze.</p>
+      </div>
+    </a>
+  </div>
+  <div class="column">
+    <a href="/chisom.html">
+      <div class="content">
+        <video style="width:100%" autoplay loop>
+          <source src="Demos/ChisomDemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Chisom</h3>
+        <p>Fly around and try to stay alive in this multiplayer bullet hell game.</p>
+    </div>
+    </a>
+  </div>
+  
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

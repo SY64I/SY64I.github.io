@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(35, 85, 141);
+  position: fixed; 
+  overflow: auto;
+  z-index: 1;
+}
+li {
+  float: left;
+}
+li.logo {
+  display: block;
+  float: left;
+}
+li a.button {
+  display: block;
+  background-color: rgb(48, 107, 172);
+  color: rgb(245, 230, 255);
+  padding: 16px 64px;
+  text-decoration: none;
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+li a:hover:not(.active) {
+  background-color: rgb(152, 185, 242);
+  color: rgb(87, 132, 211);
+}
+.active {
+  display: block;
+  background-color: rgb(123, 120, 224);
+  color: rgb(245, 230, 255);
+  padding: 16px 64px;
+  text-decoration: none;
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+
+
+body {
+  background-image: url("Stars(Bigger).png");
+  padding: 20px;
+  color: rgb(203, 220, 251); 
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 20px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60px;
+  word-break: break-all;
+  text-shadow: 10px 10px 10px rgb(111, 156, 235);
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+}
+
+h3 {
+  color: rgb(201, 199, 251); 
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 21px;
+}
+
+p {
+  color: rgb(152, 185, 242);  
+  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  font-size: 18px;
+}
+p.clear {
+  clear: left;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+div.gallery {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 10px 10px;
+    border: 10px solid rgb(12, 53, 97);
+    background-color: rgb(20, 27, 65);
+    float:left;
+    width: 48%;
+}
+div.gallery:hover {
+    border: 10px solid rgb(73, 54, 170);;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 5px;
+    font-size:20px; color:rgb(245, 230, 255); 
+    text-align: center;
+    font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.block {
+  background-color: rgb(20, 27, 65);
+  padding: 10px;
+}
+
+</style>
+<!-- Put Page Title Here-->
+<title>SY64I's Page: Soul-louS</title>
+
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+  <ul>
+    <li class="logo"><a href="/index.html"><b><img src="64LogoAnim2(512 x 512).gif" alt="My Logo" width="67" height="67"></b></a></li>
+    <li><a class="button" href="/games.html"><b>Games</b></a></li>
+    <li><a class="active"><b>Art</b></a></li>
+    <li><a class="button" href="/home.html"><b>About</b></a></li>
+  </ul>
+  <h1>My Art</h1>
+
+  <div class="block">
+    <hr>
+    <h2>This is a gallery of some pixel art pieces I have created.</h2>
+    <p>Along with these, more of my art can be found in my game projects.</p>
+    <hr>
+  </div>
+
+
+  <a target="_blank" href="Gallery/LakeviewSunrise(Enlarged).png">
+      <div class="gallery">
+        <img src="Gallery/LakeviewSunrise(Enlarged).png" alt="Lakeview Sunrise" width="512" height="288">
+      <div class="desc">Lakeview Sunrise</div>
+    </div>
+  </a>
+
+  <a target="_blank" href="Gallery/NightlyBedroom(Enlarged).png">
+      <div class="gallery">
+        <img src="Gallery/NightlyBedroom(Enlarged).png" alt="Nightly Bedroom" width="512" height="288">
+      <div class="desc">Nightly Bedroom</div>
+    </div>
+  </a>
+
+  <a target="_blank" href="Gallery/VioletCosmos(Enlarged).png">
+      <div class="gallery">
+        <img src="Gallery/VioletCosmos(Enlarged).png" alt="Violet Cosmos" width="512" height="288">
+      <div class="desc">Violet Cosmos</div>
+    </div>
+  </a>
+</div>
+<p class="clear">
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <hr>
+  </p>
+</body>
+</html>
