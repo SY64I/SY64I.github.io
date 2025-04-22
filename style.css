@@ -1,0 +1,173 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style-type: none;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(35, 85, 141);
+    position: fixed; 
+    overflow: auto;
+    z-index: 1;
+  }
+  li {
+    float: left;
+  }
+
+  li a.button {
+    display: block;
+    background-color: rgb(48, 107, 172);
+    color: rgb(245, 230, 255);
+    padding: 16px 64px;
+    text-decoration: none;
+    font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+  }
+  li a:hover:not(.active) {
+    background-color: rgb(152, 185, 242);
+    color: rgb(87, 132, 211);
+  }
+  .active {
+    display: block;
+    background-color: rgb(123, 120, 224);
+    color: rgb(245, 230, 255);
+    padding: 16px 64px;
+    text-decoration: none;
+    font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+  }
+  .logo {
+    display: block;
+    text-decoration: none;
+    padding: 0px 0px;
+  }
+  
+  
+  
+  body {
+    background-image: url("Stars(Bigger).png");
+    padding: 20px;
+    color: rgb(203, 220, 251); 
+    font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+    font-size: 20px;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 60px;
+    text-shadow: 10px 10px 10px rgb(111, 156, 235);
+    font-family: 'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+  }
+  
+  h3 {
+    color: rgb(201, 199, 251); 
+    font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+    font-size: 21px;
+  }
+  
+  p {
+    color: rgb(152, 185, 242);  
+    font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+    font-size: 18px;
+  }
+  
+  p.center {
+    color: rgb(152, 185, 242);  
+    font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
+    font-size: 18px;
+    text-align: center;
+    float: none;
+  }
+  
+  a {
+  color: rgb(217, 104, 245)
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: rgb(20, 27, 65);
+    padding: 10px;
+  }
+  
+  .content:hover {
+    background-color: rgb(73, 54, 170);
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+    li a.button {
+        font-size:3vw;
+        padding: 16px 48px;
+    }
+    .active {
+        font-size:3vw;
+        padding: 16px 48px;
+    }
+    .logo {
+        width:8vw;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  p.clear {
+    clear: left;
+  }
+  
+  div.videodisplay {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: 10px solid rgb(12, 53, 97);
+    background-color: rgb(20, 27, 65);
+    float:left;
+  }
+
+  .block {
+    background-color: rgb(20, 27, 65);
+    padding: 10px;
+  }

@@ -2,109 +2,9 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
-
+<link rel='stylesheet' href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
 
-ul {
-  list-style-type: none;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: rgb(35, 85, 141);
-  position: fixed; 
-  overflow: auto;
-  z-index: 1;
-}
-li {
-  float: left;
-}
-li.logo {
-  display: block;
-  float: left;
-}
-li a.button {
-  display: block;
-  background-color: rgb(48, 107, 172);
-  color: rgb(245, 230, 255);
-  padding: 16px 64px;
-  text-decoration: none;
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-}
-li a:hover:not(.active) {
-  background-color: rgb(152, 185, 242);
-  color: rgb(87, 132, 211);
-}
-.active {
-  display: block;
-  background-color: rgb(123, 120, 224);
-  color: rgb(245, 230, 255);
-  padding: 16px 64px;
-  text-decoration: none;
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-}
-
-
-
-body {
-  background-image: url("Stars(Bigger).png");
-  padding: 20px;
-  color: rgb(203, 220, 251); 
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-  font-size: 20px;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 60px;
-  word-break: break-all;
-  text-shadow: 10px 10px 10px rgb(111, 156, 235);
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-}
-
-h3 {
-  color: rgb(201, 199, 251); 
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-  font-size: 21px;
-}
-
-p {
-  color: rgb(152, 185, 242);  
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-  font-size: 18px;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-div.videodisplay {
-  display: block;
-  text-align: center;
-  width: 100%;
-  border: 10px solid rgb(12, 53, 97);
-  background-color: rgb(20, 27, 65);
-  float:left;
-}
-
-.block {
-  background-color: rgb(20, 27, 65);
-  padding: 10px;
-}
-
-</style>
 <!-- Put Page Title Here-->
 <title>SY64I's Page: Some Maze Game</title>
 
@@ -114,7 +14,7 @@ div.videodisplay {
 <!-- MAIN (Center website) -->
 <div class="main">
   <ul>
-    <li class="logo"><a href="/index.html"><b><img src="64LogoAnim2(512 x 512).gif" alt="My Logo" width="67" height="67"></b></a></li>
+    <li><a class="logo" href="/index.html"><img src="64LogoAnimV2.gif" alt="My Logo" width=100%></a></li>
     <li><a class="button" href="/games.html"><b>Games</b></a></li>
     <li><a class="button" href="/art.html"><b>Art</b></a></li>
     <li><a class="button" href="/home.html"><b>About</b></a></li>
@@ -146,22 +46,22 @@ div.videodisplay {
   <p> For this project we were allowed to use whatever assets we wanted, and due to my limited modelling knowledge at the time, I decided to use FNAF
     animatronics in the game. Specifically, I chose Freddy, Chica and Foxy (since I wasn't able to rig Bonnie's model correctly). Each has 
     slightly different mechanics: Freddy is an all-rounder, Foxy is the fastest animatronic, and Chica is the slowest animatronic, but she can enter
-    crawlspaces that Freddy and Foxy cannot enter.
+    crawl spaces that Freddy and Foxy cannot enter.
   </p>
   <p>To dive deeper into the inner workings of each animatronic, all of them have 5 states they can be in. They can be in 'idle' or 'wander' states
     at random to give them semi-random roaming movement. If the player runs near an animatronic, they can 'hear' the player and start walking to their
     location in a 'seek' state. If they player goes through the line-of-sight of an animatronic, the animatronic will enter a 'chase' state to try and
-    persue the player. Finally, if an animatronic reaches the player, they enter a 'kill' state where they jumpscare the player.
+    pursue the player. Finally, if an animatronic reaches the player, they enter a 'kill' state where they jumpscare the player.
   </p>
   <p>Since I wanted to try and make my game scary, I also added in proximity based sound into the game. If a player is far away from an animatronic, either
     they won't hear the animatronic at all, or they'll hear fainter footsteps as they walk around. If an animatronic is closer to the player, the animatronics 
     footsteps will grow louder as they grow closer. This creates a nice audio affect oof the player hearing the animatronics growing closer to the player as they
     give chase, which adds to the scary factor of the game in a nice way.
   </p>
-  <p> When I made this project, I wanted my friends in my class to play my game, but they were too afraid to play my game. So I created a seperate 
+  <p> When I made this project, I wanted my friends in my class to play my game, but they were too afraid to play my game. So I created a separate 
     mode specifically for them called 'Meme Mode'. In this mode, crawl spaces are removed, the level is much brighter, Kevin Macleod plays, and instead of Freddy, Chica and Foxy chasing you, Donkey Kong,
     Waluigi and Sonic chase you instead. The new characters also have simpler AI, as they'll hone in on the player's location if they're close enough to the player
-    instead of only when the player runs. This mode was mainly created for fun, and so my friends didn't have any excuse not to play my game (I invevitably made them play
+    instead of only when the player runs. This mode was mainly created for fun, and so my friends didn't have any excuse not to play my game (I inevitably made them play
     the normal mode anyway :) ).
   </p>
   <hr>

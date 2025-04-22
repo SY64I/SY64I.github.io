@@ -2,109 +2,9 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet'>
-
+<link rel='stylesheet' href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
 
-ul {
-  list-style-type: none;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: rgb(35, 85, 141);
-  position: fixed; 
-  overflow: auto;
-  z-index: 1;
-}
-li {
-  float: left;
-}
-li.logo {
-  display: block;
-  float: left;
-}
-li a.button {
-  display: block;
-  background-color: rgb(48, 107, 172);
-  color: rgb(245, 230, 255);
-  padding: 16px 64px;
-  text-decoration: none;
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-}
-li a:hover:not(.active) {
-  background-color: rgb(152, 185, 242);
-  color: rgb(87, 132, 211);
-}
-.active {
-  display: block;
-  background-color: rgb(123, 120, 224);
-  color: rgb(245, 230, 255);
-  padding: 16px 64px;
-  text-decoration: none;
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
-}
-
-
-
-body {
-  background-image: url("Stars(Bigger).png");
-  padding: 20px;
-  color: rgb(203, 220, 251); 
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-  font-size: 20px;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 60px;
-  word-break: break-all;
-  text-shadow: 10px 10px 10px rgb(111, 156, 235);
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-}
-
-h3 {
-  color: rgb(201, 199, 251); 
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-  font-size: 21px;
-}
-
-p {
-  color: rgb(152, 185, 242);  
-  font-family:'Electrolize', Georgia, 'Times New Roman', Times, serif; text-align: center; padding-top: 0px;
-  font-size: 18px;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-div.videodisplay {
-  display: block;
-  text-align: center;
-  width: 100%;
-  border: 10px solid rgb(12, 53, 97);
-  background-color: rgb(20, 27, 65);
-  float:left;
-}
-
-.block {
-  background-color: rgb(20, 27, 65);
-  padding: 10px;
-}
-
-</style>
 <!-- Put Page Title Here-->
 <title>SY64I's Page: Soul-louS</title>
 
@@ -114,7 +14,7 @@ div.videodisplay {
 <!-- MAIN (Center website) -->
 <div class="main">
   <ul>
-    <li class="logo"><a href="/index.html"><b><img src="64LogoAnim2(512 x 512).gif" alt="My Logo" width="67" height="67"></b></a></li>
+    <li><a class="logo" href="/index.html"><img src="64LogoAnimV2.gif" alt="My Logo" width=100%></a></li>
     <li><a class="button" href="/games.html"><b>Games</b></a></li>
     <li><a class="button" href="/art.html"><b>Art</b></a></li>
     <li><a class="button" href="/home.html"><b>About</b></a></li>
@@ -137,17 +37,17 @@ div.videodisplay {
     spirit worlds are linked, so teamwork between Nolon's body and spirit are required to solve puzzles. There are 8 levels, with possibly a few 
     extra secret levels to be found! 
   </p>
-  <p> An older version of this game was made for my <b>first ever game jam</b>, the "Queen's Game Jam 2024", where <b>it won first place overall</b>.
+  <p> An older version of this game was made for my <b>first ever game jam, the "Queen's Game Jam 2024"</b>, where <b>it won first place overall</b>.
     After the jam, I returned to this game to add more content and give it more polish, which lead this game to becoming <b>my first
     fully original high quality game project.</b> Everything in this game, from the <b>programming, art and music are all of my own creation.</b>
   </p>
-  <h3>Want to play this game for yourself? Check it out on my itch.io page!</h3>
+  <h3><a href="https://sy64i.itch.io/soul-lous"><u>Want to play this game for yourself? Check it out on my itch.io page!</u></a></h3>
   <iframe frameborder="0" src="https://itch.io/embed/2604834?linkback=true&amp;border_width=2&amp;bg_color=3c4d52&amp;fg_color=dbefe8&amp;link_color=a8d695&amp;border_color=b4b4b4" 
     width="554" height="169"><a href="https://sy64i.itch.io/soul-lous">Soul-louS by SY64I</a></iframe>
   <hr>
-  <p> The game jam I originally made this game lasted for about 2 days, and the theme of the jam was 'Symmetry'. The way I tied my game into the theme
+  <p> The game jam I originally made this game for lasted for about 2 days, and the theme of the jam was 'Symmetry'. The way I tied my game into the theme
     was mainly in the level design of each level. In each level, there is always a physical and spiritual world. The geometry of the level is mirrored between 
-    both of the worlds, but boxes and switches remain the same place between both worlds. This created a challenge in desiging levels: I had to ensure that each
+    both of the worlds, but boxes and switches remain the same place between both worlds. This created a challenge in designing levels: I had to ensure that each
     level had some way of being mirrored, but also allow the objects that remain in the same spots to be placed without conflicting with the level layout.
   </p>
   <p> Between both worlds, the player has to guide two characters. One is Nolon's body, which has to navigate each level with typical platformer mechanics. The other
