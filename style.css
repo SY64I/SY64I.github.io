@@ -165,6 +165,9 @@
             font-size:3vw;
             padding: 8px 32px;
         }
+        .logo {
+            width:16vw;
+        }
       }
   
   p.clear {
