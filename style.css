@@ -134,6 +134,8 @@
     .column {
       width: 50%;
     }
+  }
+  @media screen and (max-width: 700px) {
     li a.button {
         font-size:3vw;
         padding: 16px 48px;
@@ -153,6 +155,20 @@
       width: 100%;
     }
   }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 500px) {
+        li a.button {
+            font-size:2vw;
+            padding: 16px 48px;
+        }
+        .active {
+            font-size:2vw;
+            padding: 16px 48px;
+        }
+        .logo {
+            width:8vw;
+        }
+      }
   
   p.clear {
     clear: left;
